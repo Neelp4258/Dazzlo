@@ -337,6 +337,15 @@ body {
 
 /* Mobile-First Responsive Design */
 @media (max-width: 640px) {
+  /* Reduce blur effects on mobile for better performance */
+  .glass {
+    backdrop-filter: blur(5px);
+  }
+  
+  .glass-card {
+    backdrop-filter: blur(10px);
+  }
+  
   /* Typography Adjustments */
   .heading-font {
     font-size: clamp(2rem, 8vw, 3rem);
@@ -449,40 +458,7 @@ body {
     z-index: 1001;
   }
   
-  /* Mobile Menu Override for Mobile Devices */
-  .mobile-menu {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: rgba(0, 0, 0, 0.95) !important;
-    z-index: 9999 !important;
-    transform: translateX(-100%) !important;
-    transition: transform 0.3s ease !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    backdrop-filter: blur(10px) !important;
-  }
-  
-  .mobile-menu.open {
-    transform: translateX(0) !important;
-  }
-  
-  /* Force Mobile Menu Button Visibility */
-  .mobile-menu-btn {
-    display: block !important;
-    z-index: 10000 !important;
-  }
-  
-  /* Hide Desktop Menu on Mobile */
-  .hidden.md\\:flex {
-    display: none !important;
-  }
+
   
     /* COMPREHENSIVE TEXT OVERLAP FIX */
   
@@ -666,7 +642,7 @@ section {
 /* High DPI Mobile Devices */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .glass-card {
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px); /* Reduced from 30px to prevent excessive blur */
   }
   
   .venture-logo {
