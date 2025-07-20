@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gold: #D4AF37;
+  --primary-blue: #1E3A8A;
+  --accent-gold: #F4E4BC;
+  --dark-bg: #0F172A;
+  --light-bg: #F8FAFC;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #1E293B 100%);
+  color: #E2E8F0;
+  overflow-x: hidden;
+}
+
+.heading-font {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Glassmorphism Effects */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary-gold);
+}
+
+/* Navigation */
+.nav-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-bg) 50%, var(--primary-gold) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Section Gradient Animation */
+.section-gradient {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-bg) 50%, var(--primary-gold) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animated Text */
+.animated-text {
+  background: linear-gradient(45deg, var(--primary-gold), #FFD700, var(--primary-gold));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Scroll Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, #FFD700 100%);
+  color: var(--dark-bg);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary-gold);
+  border: 2px solid var(--primary-gold);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: var(--primary-gold);
+  color: var(--dark-bg);
+  transform: translateY(-2px);
+}
+
+/* Service Cards */
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--primary-gold);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+}
+
+/* Timeline */
+.timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary-gold), transparent);
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: var(--primary-gold);
+  border-radius: 50%;
+  border: 3px solid var(--dark-bg);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* Mobile-First Responsive Design */
+@media (max-width: 640px) {
+  /* Typography Adjustments */
+  .heading-font {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+  
+  /* Hero Section Mobile */
+  .hero-gradient {
+    background-size: 200% 200%;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  
+  /* Navigation Mobile */
+  .mobile-menu {
+    padding-top: 80px;
+  }
+  
+  .mobile-menu a {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Glass Cards Mobile */
+  .glass-card {
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+  
+  /* Service Cards Mobile */
+  .service-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Timeline Mobile */
+  .timeline-item {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline-item::after {
+    width: 14px;
+    height: 14px;
+    left: -6px;
+  }
+  
+  /* Buttons Mobile */
+  .btn-primary, .btn-secondary {
+    padding: 14px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Grid Adjustments */
+  .grid {
+    gap: 1rem;
+  }
+  
+  /* Venture Logos Mobile */
+  .venture-logo {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Testimonials Mobile */
+  .testimonial {
+    padding: 0 1rem;
+  }
+  
+  /* Contact Form Mobile */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Footer Mobile */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* Section Spacing Mobile */
+  .section-mobile {
+    padding: 3rem 1rem;
+  }
+  
+  /* Floating Elements Mobile */
+  .floating-element {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra Small Mobile */
+  .hero-gradient {
+    padding: 1rem 0.5rem;
+  }
+  
+  .glass-card {
+    padding: 1rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Navigation Logo Mobile */
+  .nav-logo {
+    height: 40px;
+  }
+  
+  .nav-brand {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-gradient {
+    background-size: 300% 300%;
+  }
+  
+  .glass-card {
+    padding: 2rem;
+  }
+  
+  .grid {
+    gap: 1.5rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 14px 28px;
+  }
+}
+
+/* Landscape Mobile Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-gradient {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .mobile-menu {
+    padding-top: 60px;
+  }
+  
+  .mobile-menu a {
+    font-size: 1.25rem;
+    padding: 0.75rem 0;
+  }
+  
+  .section-mobile {
+    padding: 2rem 1rem;
+  }
+}
+
+/* High DPI Mobile Devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .glass-card {
+    backdrop-filter: blur(30px);
+  }
+  
+  .venture-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .glass-card:hover {
+    transform: none;
+  }
+  
+  .btn-primary:active,
+  .btn-secondary:active {
+    transform: scale(0.98);
+  }
+  
+  .glass-card:active {
+    transform: scale(0.99);
+  }
+}
+
+/* Loading Animation */
+.loading {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFD700;
+} 

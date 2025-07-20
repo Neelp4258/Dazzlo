@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Dazzlo Enterprises</title>
+    <meta name="description" content="Explore Dazzlo Enterprises' comprehensive range of services including HR consulting, IT development, real estate investment, marketing automation, and AI-powered document generation.">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../Assets/logo.png" alt="Dazzlo Enterprises" class="h-16 w-auto nav-logo">
+                        <span class="ml-3 text-2xl font-bold text-white heading-font nav-brand">Dazzlo</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">About Us</a>
+                    <a href="services.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300 active">Our Services</a>
+                    <a href="vision.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">Vision & Mission</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-btn text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden fixed top-0 left-0 w-full h-full bg-slate-900 bg-opacity-95 backdrop-blur-md transform transition-transform duration-300">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="../index.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Home</a>
+                <a href="about.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">About Us</a>
+                <a href="services.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Our Services</a>
+                <a href="vision.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Vision & Mission</a>
+                <a href="contact.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 heading-font fade-in">
+                Our <span class="animated-text">Services</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto slide-in-left">
+                Comprehensive solutions across five specialized verticals designed to transform your business
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 section-gradient section-mobile">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 heading-font">
+                    Complete <span class="animated-text">Business Solutions</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    From HR to AI, we provide end-to-end solutions that address every aspect of modern business needs
+                </p>
+            </div>
+
+            <!-- Service Cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+                <!-- DazzloHR -->
+                <div class="service-card fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 mr-4 flex items-center justify-center">
+                            <img src="../Assets/DazzloHR.png" alt="DazzloHR" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white">DazzloHR</h3>
+                            <p class="text-red-400">HR & Talent Consulting</p>
+                        </div>
+                    </div>
+                    <div class="service-content overflow-hidden transition-all duration-300">
+                        <p class="text-gray-300 mb-6">
+                            Revolutionizing human resources with innovative recruitment strategies, employee engagement programs, and organizational development solutions.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Recruitment & Staffing</h4>
+                                <p class="text-gray-300 text-sm">End-to-end talent acquisition and placement services</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Employee Engagement</h4>
+                                <p class="text-gray-300 text-sm">Programs to boost morale and productivity</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">HR Technology</h4>
+                                <p class="text-gray-300 text-sm">Modern HRIS and automation solutions</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Compliance & Training</h4>
+                                <p class="text-gray-300 text-sm">Regulatory compliance and skill development</p>
+                            </div>
+                        </div>
+                        <a href="https://dazzlohr.in" target="_blank" class="btn-primary">
+                            Visit DazzloHR
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ambivare -->
+                <div class="service-card fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 mr-4 flex items-center justify-center">
+                            <img src="../Assets/Ambivare.png" alt="Ambivare" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white">Ambivare</h3>
+                            <p class="text-blue-400">IT Consulting & Development</p>
+                        </div>
+                    </div>
+                    <div class="service-content overflow-hidden transition-all duration-300">
+                        <p class="text-gray-300 mb-6">
+                            Cutting-edge software development and IT consulting services, specializing in custom solutions, AI integration, and digital transformation.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Custom Software</h4>
+                                <p class="text-gray-300 text-sm">Tailored applications for your business needs</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">AI & Machine Learning</h4>
+                                <p class="text-gray-300 text-sm">Intelligent automation and predictive analytics</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Cloud Solutions</h4>
+                                <p class="text-gray-300 text-sm">Scalable cloud infrastructure and migration</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Digital Transformation</h4>
+                                <p class="text-gray-300 text-sm">End-to-end business process modernization</p>
+                            </div>
+                        </div>
+                        <a href="https://ambivare.com" target="_blank" class="btn-primary">
+                            Visit Ambivare
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TrivantaEdge -->
+                <div class="service-card fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 mr-4 flex items-center justify-center">
+                            <img src="../Assets/Trivanta.png" alt="TrivantaEdge" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white">TrivantaEdge</h3>
+                            <p class="text-green-400">Real Estate Investment</p>
+                        </div>
+                    </div>
+                    <div class="service-content overflow-hidden transition-all duration-300">
+                        <p class="text-gray-300 mb-6">
+                            Strategic real estate investment consulting, providing market analysis, portfolio management, and investment opportunities across diverse property sectors.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Market Analysis</h4>
+                                <p class="text-gray-300 text-sm">Comprehensive property market research</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Investment Strategy</h4>
+                                <p class="text-gray-300 text-sm">Tailored investment plans and portfolios</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Property Management</h4>
+                                <p class="text-gray-300 text-sm">End-to-end property administration</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Risk Assessment</h4>
+                                <p class="text-gray-300 text-sm">Comprehensive investment risk analysis</p>
+                            </div>
+                        </div>
+                        <a href="https://trivantaedge.com" target="_blank" class="btn-primary">
+                            Visit TrivantaEdge
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DazzloVerse -->
+                <div class="service-card fade-in">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 mr-4 flex items-center justify-center">
+                            <img src="../Assets/DazzloGo.png.png" alt="DazzloVerse" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white">DazzloVerse</h3>
+                            <p class="text-purple-400">Marketing Automation</p>
+                        </div>
+                    </div>
+                    <div class="service-content overflow-hidden transition-all duration-300">
+                        <p class="text-gray-300 mb-6">
+                            Advanced email and WhatsApp marketing automation through DazzloGo, streamlining customer communication and engagement strategies.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Email Marketing</h4>
+                                <p class="text-gray-300 text-sm">Automated email campaigns and sequences</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">WhatsApp Business</h4>
+                                <p class="text-gray-300 text-sm">Bulk messaging and customer support</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Campaign Analytics</h4>
+                                <p class="text-gray-300 text-sm">Detailed performance tracking and insights</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Lead Management</h4>
+                                <p class="text-gray-300 text-sm">Automated lead nurturing and conversion</p>
+                            </div>
+                        </div>
+                        <a href="https://dazzloverse.com" target="_blank" class="btn-primary">
+                            Visit DazzloVerse
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DazzloDocs -->
+                <div class="service-card fade-in lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 mr-4 flex items-center justify-center">
+                            <img src="../Assets/DazzloDocs.png" alt="DazzloDocs" class="w-full h-full object-contain">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white">DazzloDocs</h3>
+                            <p class="text-yellow-400">AI-Powered Document Generation</p>
+                        </div>
+                    </div>
+                    <div class="service-content overflow-hidden transition-all duration-300">
+                        <p class="text-gray-300 mb-6">
+                            Revolutionary AI-powered document and PDF generation platform that automates the creation of professional documents, saving time and ensuring consistency.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Document Templates</h4>
+                                <p class="text-gray-300 text-sm">Pre-built templates for common business documents</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">AI Content Generation</h4>
+                                <p class="text-gray-300 text-sm">Intelligent content creation and formatting</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">PDF Export</h4>
+                                <p class="text-gray-300 text-sm">Professional PDF generation and formatting</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Collaboration Tools</h4>
+                                <p class="text-gray-300 text-sm">Team collaboration and document sharing</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Custom Branding</h4>
+                                <p class="text-gray-300 text-sm">Branded templates and styling options</p>
+                            </div>
+                            <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                                <h4 class="text-white font-semibold mb-2">Integration APIs</h4>
+                                <p class="text-gray-300 text-sm">Seamless integration with existing systems</p>
+                            </div>
+                        </div>
+                        <a href="https://dazzlodocs.life" target="_blank" class="btn-primary">
+                            Visit DazzloDocs
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Services -->
+    <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black bg-opacity-30 section-gradient section-mobile">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 fade-in">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 heading-font">
+                    Why Choose Our <span class="animated-text">Services</span>?
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    We deliver results through innovation, expertise, and a commitment to excellence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Proven Results</h3>
+                    <p class="text-gray-300">Track record of delivering measurable business outcomes and ROI for our clients across all verticals.</p>
+                </div>
+
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Integrated Solutions</h3>
+                    <p class="text-gray-300">Seamless integration across all our services, providing comprehensive business transformation.</p>
+                </div>
+
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">24/7 Support</h3>
+                    <p class="text-gray-300">Round-the-clock support and maintenance to ensure your business operations run smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 section-gradient section-mobile">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="glass-card p-12 fade-in">
+                <h2 class="text-4xl font-bold text-white mb-6 heading-font">
+                    Ready to <span class="animated-text">Transform</span> Your Business?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Let's discuss how our comprehensive suite of services can drive your business forward
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn-primary">
+                        Get Started Today
+                    </a>
+                    <a href="about.html" class="btn-secondary">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 footer-grid">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="../Assets/logo.png" alt="Dazzlo Enterprises" class="h-12 w-auto">
+                        <span class="ml-3 text-2xl font-bold text-white heading-font">Dazzlo</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Redefining lifestyle with innovations and dreams. A next-generation parent company driving transformation across multiple specialized verticals.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/dazzlo-ventures-pvt-ltd" target="_blank" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dazzlohr/" target="_blank" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Our Services</a></li>
+                        <li><a href="vision.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Vision & Mission</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Contact</a></li>
+                        <li><a href="../PDFs/Privacy&Policy.pdf" target="_blank" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="../PDFs/Companyprofile.pdf" target="_blank" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Download Brochure</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-6">Contact Info</h3>
+                    <div class="space-y-3 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i> +91 9373015503</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@dazzlo.co.in</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Kalyan, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Dazzlo Enterprises Pvt Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazzlo Enterprises - Redefining Lifestyle with Innovations and Dreams</title>
+    <meta name="description" content="Dazzlo Enterprises is a next-gen parent company of multiple specialized verticals including HR consulting, IT development, real estate, marketing automation, and AI-powered document generation.">
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 glass">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="Assets/logo.png" alt="Dazzlo Enterprises" class="h-16 w-auto nav-logo">
+                    <span class="ml-3 text-2xl font-bold text-white heading-font nav-brand">Dazzlo</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300 active">Home</a>
+                    <a href="pages/about.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">About Us</a>
+                    <a href="pages/services.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">Our Services</a>
+                    <a href="pages/vision.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">Vision & Mission</a>
+                    <a href="pages/contact.html" class="nav-link text-white hover:text-yellow-400 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-btn text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden fixed top-0 left-0 w-full h-full bg-slate-900 bg-opacity-95 backdrop-blur-md transform transition-transform duration-300">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="index.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Home</a>
+                <a href="pages/about.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">About Us</a>
+                <a href="pages/services.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Our Services</a>
+                <a href="pages/vision.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Vision & Mission</a>
+                <a href="pages/contact.html" class="text-2xl text-white hover:text-yellow-400 transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 heading-font fade-in">
+                Welcome to <span class="animated-text">Dazzlo Enterprises</span>
+            </h1>
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 slide-in-left">
+                <em>Redefining Lifestyle with Innovations and Dreams</em>
+            </p>
+            <p class="text-base sm:text-lg text-gray-300 mb-12 max-w-3xl mx-auto slide-in-right">
+                A next-generation parent company driving innovation across multiple specialized verticals, 
+                from HR consulting to AI-powered solutions, creating a comprehensive ecosystem for modern business needs.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="pages/services.html" class="btn-primary">
+                    Explore Our Services
+                </a>
+                <a href="pages/about.html" class="btn-secondary">
+                    Learn More About Us
+                </a>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-yellow-400 bg-opacity-20 rounded-full blur-xl animate-pulse floating-element"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-blue-400 bg-opacity-20 rounded-full blur-xl animate-pulse delay-1000 floating-element"></div>
+    </section>
+
+    <!-- Why Dazzlo Section -->
+    <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 section-gradient section-mobile">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 fade-in">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 heading-font">
+                    Why Choose <span class="animated-text">Dazzlo</span>?
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    We combine cutting-edge technology with human expertise to deliver solutions that transform businesses and enhance lifestyles.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Innovation First</h3>
+                    <p class="text-gray-300">Pioneering next-generation solutions that push the boundaries of what's possible.</p>
+                </div>
+
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Expert Team</h3>
+                    <p class="text-gray-300">Industry veterans and young innovators working together to deliver excellence.</p>
+                </div>
+
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Trusted Partner</h3>
+                    <p class="text-gray-300">Building long-term relationships based on transparency, reliability, and results.</p>
+                </div>
+
+                <div class="glass-card p-8 text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-globe text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Global Reach</h3>
+                    <p class="text-gray-300">Serving clients worldwide with localized expertise and global best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Ventures Section -->
+    <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black bg-opacity-30 section-gradient section-mobile">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 fade-in">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 heading-font">
+                    Our <span class="animated-text">Ventures</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    Discover our specialized verticals, each designed to address specific business challenges with innovative solutions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- DazzloHR -->
+                <div class="glass-card p-8 hover:scale-105 transition-transform duration-300 fade-in">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center venture-logo">
+                        <img src="Assets/DazzloHR.png" alt="DazzloHR" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">DazzloHR</h3>
+                    <p class="text-gray-300 mb-6 text-center">HR & Talent Consulting</p>
+                    <div class="text-center">
+                        <a href="https://dazzlohr.in" target="_blank" class="btn-primary text-sm">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ambivare -->
+                <div class="glass-card p-8 hover:scale-105 transition-transform duration-300 fade-in">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center venture-logo">
+                        <img src="Assets/Ambivare.png" alt="Ambivare" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">Ambivare</h3>
+                    <p class="text-gray-300 mb-6 text-center">IT Consulting & Software Development</p>
+                    <div class="text-center">
+                        <a href="https://ambivare.com" target="_blank" class="btn-primary text-sm">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TrivantaEdge -->
+                <div class="glass-card p-8 hover:scale-105 transition-transform duration-300 fade-in">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center venture-logo">
+                        <img src="Assets/Trivanta.png" alt="TrivantaEdge" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">TrivantaEdge</h3>
+                    <p class="text-gray-300 mb-6 text-center">Real Estate Investment Consulting</p>
+                    <div class="text-center">
+                        <a href="https://trivantaedge.com" target="_blank" class="btn-primary text-sm">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DazzloVerse -->
+                <div class="glass-card p-8 hover:scale-105 transition-transform duration-300 fade-in">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center venture-logo">
+                        <img src="Assets/DazzloGo.png.png" alt="DazzloVerse" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">DazzloVerse</h3>
+                    <p class="text-gray-300 mb-6 text-center">Email & WhatsApp Marketing Automation</p>
+                    <div class="text-center">
+                        <a href="https://dazzloverse.com" target="_blank" class="btn-primary text-sm">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DazzloDocs -->
+                <div class="glass-card p-8 hover:scale-105 transition-transform duration-300 fade-in">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-6 flex items-center justify-center venture-logo">
+                        <img src="Assets/DazzloDocs.png" alt="DazzloDocs" class="w-full h-full object-contain">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">DazzloDocs</h3>
+                    <p class="text-gray-300 mb-6 text-center">AI-powered Document & PDF Generator</p>
+                    <div class="text-center">
+                        <a href="https://dazzlodocs.life" target="_blank" class="btn-primary text-sm">
+                            Visit Website
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 section-gradient section-mobile">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16 fade-in">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 heading-font">
+                    What Our <span class="animated-text">Clients Say</span>
+                </h2>
+            </div>
+
+            <div class="relative overflow-hidden">
+                <div class="flex transition-transform duration-500">
+                    <div class="testimonial w-full flex-shrink-0 px-8">
+                        <div class="glass-card p-8 text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-quote-left text-2xl text-white"></i>
+                            </div>
+                            <p class="text-lg text-gray-300 mb-6 italic">
+                                "DazzloHR's automations and presentation of candidates have revolutionized our hiring process. Their attention to detail and commitment to finding the perfect cultural fit is unmatched. The automated screening process has saved us countless hours and helped us find exceptional talent."
+                            </p>
+                            <h4 class="text-xl font-semibold text-white">VS</h4>
+                            <p class="text-gray-400">Managing Director, Velox Solutions Pvt Ltd</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial w-full flex-shrink-0 px-8">
+                        <div class="glass-card p-8 text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-quote-left text-2xl text-white"></i>
+                            </div>
+                            <p class="text-lg text-gray-300 mb-6 italic">
+                                "The AI-powered document generation from DazzloDocs has saved us countless hours. It's like having a team of experts working 24/7."
+                            </p>
+                            <h4 class="text-xl font-semibold text-white">Michael Chen</h4>
+                            <p class="text-gray-400">CTO, InnovateLabs</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial w-full flex-shrink-0 px-8">
+                        <div class="glass-card p-8 text-center">
+                            <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                                <i class="fas fa-quote-left text-2xl text-white"></i>
+                            </div>
+                            <p class="text-lg text-gray-300 mb-6 italic">
+                                "TrivantaEdge's real estate investment strategies have consistently delivered exceptional returns. They truly understand the market dynamics."
+                            </p>
+                            <h4 class="text-xl font-semibold text-white">Emily Rodriguez</h4>
+                            <p class="text-gray-400">Investment Manager, Capital Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 footer-grid">
+                <div class="col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="Assets/logo.png" alt="Dazzlo Enterprises" class="h-12 w-auto">
+                        <span class="ml-3 text-2xl font-bold text-white heading-font">Dazzlo</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Redefining lifestyle with innovations and dreams. A next-generation parent company driving transformation across multiple specialized verticals.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/company/dazzlo-ventures-pvt-ltd" target="_blank" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dazzlohr/" target="_blank" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="pages/about.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">About Us</a></li>
+                        <li><a href="pages/services.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Our Services</a></li>
+                        <li><a href="pages/vision.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Vision & Mission</a></li>
+                        <li><a href="pages/contact.html" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Contact</a></li>
+                        <li><a href="PDFs/Privacy&Policy.pdf" target="_blank" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="PDFs/Companyprofile.pdf" target="_blank" class="text-gray-300 hover:text-yellow-400 transition-colors duration-300">Download Brochure</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-6">Contact Info</h3>
+                    <div class="space-y-3 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i> +91 9373015503</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@dazzlo.co.in</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Kalyan, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 Dazzlo Enterprises Pvt Ltd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 
