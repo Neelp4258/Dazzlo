@@ -347,6 +347,137 @@ body {
   .floating-element {
     display: none;
   }
+  
+  /* Fix Mobile Navigation */
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Fix Mobile Menu Toggle */
+  .mobile-menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+  
+  /* Fix Mobile Menu Overlay */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mobile-menu.active {
+    display: flex;
+  }
+  
+  /* Fix Text Overlapping */
+.hero-gradient h1,
+.hero-gradient p {
+  position: relative;
+  z-index: 10;
+}
+
+/* Fix Content Layering */
+.hero-gradient .relative {
+  position: relative;
+  z-index: 10;
+}
+
+/* Fix Section Content */
+section .relative {
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix Absolute Elements */
+.absolute {
+  z-index: 1;
+}
+
+/* Fix Parallax Elements */
+.parallax {
+  z-index: 0;
+}
+  
+  /* Fix Section Spacing */
+  section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Fix Button Stacking */
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  /* Fix Content Overflow */
+  .max-w-4xl,
+  .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Fix Mobile Typography */
+  h1, h2, h3 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Fix Mobile Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix Mobile Content Overflow */
+.hero-gradient,
+section {
+  overflow: hidden;
+}
+
+/* Fix Mobile Text Positioning */
+.hero-gradient .text-center {
+  position: relative;
+  z-index: 10;
+}
+
+/* Fix Mobile Button Positioning */
+.btn-container {
+  position: relative;
+  z-index: 10;
+}
+
+/* Fix Mobile Navigation Overlap */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Fix Mobile Menu Button */
+.mobile-menu-btn {
+  z-index: 1001;
+  position: relative;
+}
 }
 
 @media (max-width: 480px) {
