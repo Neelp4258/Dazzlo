@@ -73,64 +73,86 @@ class DazzloWebsite {
     }
 
     setupMobileMenu() {
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const mobileMenuClose = document.querySelector('.mobile-menu-close');
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        // Wait for DOM to be fully loaded
+        setTimeout(() => {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
 
-        console.log('Mobile menu elements found:', {
-            btn: mobileMenuBtn,
-            menu: mobileMenu,
-            close: mobileMenuClose,
-            links: mobileMenuLinks.length
-        });
-
-        if (mobileMenuBtn && mobileMenu) {
-            // Open menu
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.add('open');
-                mobileMenuBtn.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            console.log('MOBILE MENU DEBUG:', {
+                btn: !!mobileMenuBtn,
+                menu: !!mobileMenu,
+                close: !!mobileMenuClose,
+                links: mobileMenuLinks.length
             });
 
-            // Close menu with close button
-            if (mobileMenuClose) {
-                mobileMenuClose.addEventListener('click', () => {
-                    mobileMenu.classList.remove('open');
-                    mobileMenuBtn.classList.remove('active');
-                    document.body.style.overflow = ''; // Restore scrolling
+            if (mobileMenuBtn && mobileMenu) {
+                console.log('Setting up mobile menu...');
+                
+                // Remove any existing event listeners
+                const newBtn = mobileMenuBtn.cloneNode(true);
+                mobileMenuBtn.parentNode.replaceChild(newBtn, mobileMenuBtn);
+                
+                // Open menu - FIXED
+                newBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Menu button clicked!');
+                    mobileMenu.classList.add('open');
+                    newBtn.classList.add('active');
+                    document.body.style.overflow = 'hidden';
                 });
+
+                // Close menu with close button - FIXED
+                if (mobileMenuClose) {
+                    mobileMenuClose.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        console.log('Close button clicked!');
+                        mobileMenu.classList.remove('open');
+                        newBtn.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                }
+
+                // Close menu when clicking on links - FIXED
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        console.log('Menu link clicked!');
+                        mobileMenu.classList.remove('open');
+                        newBtn.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+
+                // Close menu when clicking outside - FIXED
+                document.addEventListener('click', (e) => {
+                    if (mobileMenu.classList.contains('open') && 
+                        !mobileMenu.contains(e.target) && 
+                        !newBtn.contains(e.target)) {
+                        console.log('Clicked outside menu!');
+                        mobileMenu.classList.remove('open');
+                        newBtn.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Close menu with Escape key - FIXED
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                        console.log('Escape key pressed!');
+                        mobileMenu.classList.remove('open');
+                        newBtn.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                console.log('Mobile menu setup complete!');
+            } else {
+                console.error('Mobile menu elements not found!');
             }
-
-            // Close menu when clicking on links
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('open');
-                    mobileMenuBtn.classList.remove('active');
-                    document.body.style.overflow = ''; // Restore scrolling
-                });
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (mobileMenu.classList.contains('open') && 
-                    !mobileMenu.contains(e.target) && 
-                    !mobileMenuBtn.contains(e.target)) {
-                    mobileMenu.classList.remove('open');
-                    mobileMenuBtn.classList.remove('active');
-                    document.body.style.overflow = ''; // Restore scrolling
-                }
-            });
-
-            // Close menu with Escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-                    mobileMenu.classList.remove('open');
-                    mobileMenuBtn.classList.remove('active');
-                    document.body.style.overflow = ''; // Restore scrolling
-                }
-            });
-        }
+        }, 500);
     }
 
     setupServiceCards() {
